@@ -1,0 +1,6 @@
+
+For opening and closing files
+
+
+with open('data.txt') as f:
+    data = f.read()
