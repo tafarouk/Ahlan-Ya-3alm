@@ -1,6 +1,25 @@
 
+
+Taken from https://gist.github.com/JeffPaine/6213790
+
 For opening and closing files
 
 
 with open('data.txt') as f:
     data = f.read()
+    
+    Unpacking sequences
+
+p = 'Raymond', 'Hettinger', 0x30, 'python@example.com'
+
+# A common approach / habit from other languages
+fname = p[0]
+lname = p[1]
+age = p[2]
+email = p[3]
+Better
+
+fname, lname, age, email = p
+The second approach uses tuple unpacking and is faster and more readable.
+
+
